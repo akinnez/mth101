@@ -1,7 +1,15 @@
 import angularDiff from "../utils/differences";
 import { cosInDegree, sinInDegree } from "../utils/conversion";
 
- function distBtwTwoPlaces(pos1: string[],pos2:| string[]):number {
+ function distBtwTwoPlaces(pos1: Array<string>,pos2:Array<string>):number|Error | any  {
+    if (!pos1 || !pos2) return new Error('Not Found')
+    if ((pos1.length > 2 || pos1.length < 2) && (pos2.length > 2 || pos2.length < 2)) {
+    return new Error('Invalid Input')
+    }
+    if (pos1[0]==" " && pos1[1] =="" && pos2[0]=="" && pos2[1]=="") {
+        return new Error('Invalid Input')
+    }
+
     let PI:number = 3.141592653589793;
   
     if (pos1[0] == pos2[0]){

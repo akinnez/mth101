@@ -1,7 +1,8 @@
-function add(...params:number[]):number{
-    let sum:any = 0 ;
+function add(...params:Array<number>):number{
+    let sum:any ;
         for (let index = 0; index < params.length; index++) {
             const element = params[index];
+            if(isNaN(element)) throw new Error("Not a Number")
             sum += element
         }
              return sum 
