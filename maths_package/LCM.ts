@@ -1,4 +1,4 @@
-import HCF from "./hcf";
+import HCF from "./HCF";
 
 function LCM(num:number, num1:number,num2?:number | any):number | Error |undefined {
     if(!num || !num1) return new Error("Invalid Inputs")

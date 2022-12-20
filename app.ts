@@ -6,7 +6,7 @@ import { simuThreeVariable, simuTwoVariable } from "./maths_package/equation";
 import factorial from "./maths_package/factorial";
 import floor from "./maths_package/floor";
 import { val1 } from "./utils/getValue";
-import HCF from "./maths_package/hcf";
+import HCF from "./maths_package/HCF";
 import LCM from "./maths_package/LCM";
 import getMean from "./maths_package/mean";
 import getMedian from "./maths_package/median";

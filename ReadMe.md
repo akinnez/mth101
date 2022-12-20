@@ -19,9 +19,11 @@
   You can also use the default export, 
 
     import mth101 from "mth101";
+
     console.log(mth101.HCF(12,15,20))
   
-  if you use require for importing: 
+  if you use require for importing:
+   
     const mth101 = require("mth101")
 
 

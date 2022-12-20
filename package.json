@@ -1,12 +1,20 @@
  {
   "name": "mth101",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "repository":{
+    "type":"git",
+    "url":"https://github.com/akinnez/mth101.git"
+  },
+  "version": "0.0.1",
+  "description": "An extensive mathematical library that makes it easier to perform easy and complex mathematical concepts",
+  "main": "dist/cjs/index.js",
+  "module":"dist/esm/index.js",
+  "files":["dist"],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npm run build:esm && npm run build:cjs",
+    "build:esm": "tsc",
+    "build:cjs": "tsc --module CommonJS --outDir dist/cjs"
   },
   "keywords": [],
-  "author": "",
+  "author": "theoladejos",
   "license": "ISC"
 }
