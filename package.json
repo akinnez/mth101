@@ -1,14 +1,16 @@
- {
-  "name": "mth101",
-  "repository":{
-    "type":"git",
-    "url":"https://github.com/akinnez/mth101.git"
+{
+  "name": "math101",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/akinnez/mth101.git"
   },
   "version": "0.0.1",
   "description": "An extensive mathematical library that makes it easier to perform easy and complex mathematical concepts",
   "main": "dist/cjs/index.js",
-  "module":"dist/esm/index.js",
-  "files":["dist"],
+  "module": "dist/esm/index.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "npm run build:esm && npm run build:cjs",
     "build:esm": "tsc",
