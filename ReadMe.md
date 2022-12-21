@@ -1,5 +1,6 @@
-# math101
-math101 is an extensive mathematical library that makes it easier to perform easy and complex mathematical concepts.
+# MTH101
+
+MTH101 is an extensive mathematical library that makes it easier to perform easy and complex mathematical concepts.
 
 ## FEATURES
   Designed to make some calculations easier for usage.
@@ -14,24 +15,24 @@ math101 is an extensive mathematical library that makes it easier to perform eas
 ## Installation and Usage
   - Package Manager:
   
-    $ npm install math101
+    $ npm install mth101
   
   Once installed, you can import the library using import or require approach:
 
-    import {distBtwTwoPlaces} from "math101";
+    import {distBtwTwoPlaces} from "mth101";
 
   You can also use the default export, 
 
-    import math101 from "math101";
+    import mth101 from "mth101";
 
-    console.log(math101.HCF(12,15,20));
+    console.log(mth101.HCF(12,15,20));
   
   if you use require for importing: 
 
-    const math101 = require("math101");
+    const mth101 = require("mth101");
 
-     console.log(math101.HCF(12,15,20));
+     console.log(mth101.HCF(12,15,20));
 
-
+     
 
 
