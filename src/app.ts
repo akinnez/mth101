@@ -30,13 +30,13 @@ import { toDecimalPlaces, degToRad, toSignificantFigures,sinInDegree, cosInDegre
      /**
      * Returns the addition of number(s)
      */
-    add(...val:number[]):number{
-       return add(...val)
+    add(...val:Array<number>):number| Error{
+       return add(val)
     }
     combination(val:number, val1:number):number | Error{
         return combination(val,val1)
     }
-    common_factor(val1:number,val2:number,val3?:number){
+    common_factor(val1:number,val2:number,val3?:number):number | Error{
         return common_factor(val1,val2,val3)
     }
     determinantThreeByThree(
@@ -57,31 +57,31 @@ import { toDecimalPlaces, degToRad, toSignificantFigures,sinInDegree, cosInDegre
     factorial(val:number):number{
        return factorial(val)
     }
-    factors(val:number):number[]{
+    factors(val:number):Array<number>{
        return val1(val)
     }
     floor(val:number):number | Error | any{
        return floor(val)
     }
-    getMean(arr:number[]):number | undefined{
+    getMean(arr:Array<number>):number | undefined{
         return getMean(arr)
     }
-    getMedian(arr:number[]):number{
+    getMedian(arr:Array<number>):number{
         return getMedian(arr)
     }
-    getMode(arr:number[]):number{
+    getMode(arr:Array<number>):number{
         return getMode(arr)
     }
-    HCF(val1:number,val2:number,val3?:number):number{
+    HCF(val1:number,val2:number,val3?:number):number | Error{
         return HCF(val1,val2,val3)
     }
-    LCM(val1:number,val2:number,val3?:number):number | Error | any{
+    LCM(val1:number,val2:number,val3?:number):number | Error{
         return LCM(val1,val2,val3)
     }
     permutation(val:number,val1:number):number{
         return permutation(val,val1)
     }
-    range(arr:number[]):number{
+    range(arr:Array<number>):number{
         return range(arr)
     }
     significantFigure(num:number,sf:number):number | Error | undefined{
@@ -93,19 +93,19 @@ import { toDecimalPlaces, degToRad, toSignificantFigures,sinInDegree, cosInDegre
      /**
      * Returns the sorted numbers from an array of numbers
      */
-    sort(arr:number[]):number[]{
+    sort(arr:Array<number>):Array<number>{
         return sort(arr)
     }
      /**
      * Returns the standard variation of an array of numbers
      */
-    standardDeviation(arr:number[]):number{
+    standardDeviation(arr:Array<number>):number{
         return standardDeviation(arr)
     }
      /**
      * Returns the variance of an array of numbers
      */
-    variance(arr:number[]):number{
+    variance(arr:Array<number>):number{
         return variance(arr)
     }
      /**
@@ -134,7 +134,7 @@ import { toDecimalPlaces, degToRad, toSignificantFigures,sinInDegree, cosInDegre
      * @param arr An array containing latitude and longitude values e.g ["30N","40W"] or ["-45N,30W"].
      * @param arr1 An array containing latitude and longitude values e.g ["40E", "30S"].
      */
-   distBtwTwoPlaces(arr:string[],arr1:string[]):number | Error | any {
+   distBtwTwoPlaces(arr:Array<number>,arr1:Array<number>):number | Error | any {
     return parseInt(distBtwTwoPlaces(arr,arr1))
    }
      /**

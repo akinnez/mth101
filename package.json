@@ -4,19 +4,23 @@
     "type": "git",
     "url": "https://github.com/akinnez/mth101.git"
   },
-  "version": "0.0.1",
+  "version": "0.0.11",
   "description": "An extensive mathematical library that makes it easier to perform easy and complex mathematical concepts",
-  "main": "dist/cjs/index.js",
-  "module": "dist/esm/index.js",
+  "main": "lib/index.js",
+  "types":"lib/index.d.ts",
   "files": [
-    "dist"
+    "lib"
   ],
   "scripts": {
-    "build": "npm run build:esm && npm run build:cjs",
-    "build:esm": "tsc",
-    "build:cjs": "tsc --module CommonJS --outDir dist/cjs"
+    "start": "tsc"
   },
-  "keywords": [],
-  "author": "theoladejos",
-  "license": "ISC"
+  "keywords": [ "typescript", "Utilities","Mathematical Utility Functions"],
+  "author": "TheOladejos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/akinnez/mth101/issues"
+  },
+  "devDependencies": {
+    "typescript": "^4.9.4"
+  }
 }
