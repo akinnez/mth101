@@ -1,5 +1,5 @@
 
-function add(params:Array<number>):number | Error{
+function add(params:Array<number>):number | Error | any{
     let sum = 0 ;
         for (let index = 0; index < params.length; index++) {
             const element = params[index];

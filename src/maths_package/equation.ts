@@ -1,4 +1,4 @@
-import { determinantThreeByThree, determinantTwoByTwo } from "./determinant";
+import { determinantThreeOnThree, determinantTwoOnTwo } from "./determinant";
 
 export function simuTwoVariable(
     a11:number, a12:number, 
@@ -9,8 +9,8 @@ export function simuTwoVariable(
     if(!a11 || !a12 || !a21 || !a22 || !c1 || !c2) return new Error("Invalid Input")
 
     return {
-        x: determinantTwoByTwo(c1,a12,c2,a22) / determinantTwoByTwo(a11,a12,a21,a22),
-        y: determinantTwoByTwo(a11,c1,a21,c2) / determinantTwoByTwo(a11,a12,a21,a22)
+        x: determinantTwoOnTwo(c1,a12,c2,a22) / determinantTwoOnTwo(a11,a12,a21,a22),
+        y: determinantTwoOnTwo(a11,c1,a21,c2) / determinantTwoOnTwo(a11,a12,a21,a22)
     }
 }
 
@@ -27,8 +27,8 @@ export function simuThreeVariable(
     
     return new Error("Invalid Input")
     return {
-        x: determinantThreeByThree(c1, a12, a13, c2,a22,a23,c3,a32, a33)/determinantThreeByThree(a11, a12, a13, a21,a22,a23,a31,a32, a33),
-        y: determinantThreeByThree(a11, c1, a13, a21,c2,a23,a31,c3, a33) /determinantThreeByThree(a11, a12, a13, a21,a22,a23,a31,a32, a33),
-        z: determinantThreeByThree(a11, a12, c1, a21,a22,c2,a31,a32, c3) /determinantThreeByThree(a11, a12, a13, a21,a22,a23,a31,a32, a33)
+        x: determinantThreeOnThree(c1, a12, a13, c2,a22,a23,c3,a32, a33)/ determinantThreeOnThree(a11, a12, a13, a21,a22,a23,a31,a32, a33),
+        y: determinantThreeOnThree(a11, c1, a13, a21,c2,a23,a31,c3, a33) / determinantThreeOnThree(a11, a12, a13, a21,a22,a23,a31,a32, a33),
+        z: determinantThreeOnThree(a11, a12, c1, a21,a22,c2,a31,a32, c3) / determinantThreeOnThree(a11, a12, a13, a21,a22,a23,a31,a32, a33)
     }
 }

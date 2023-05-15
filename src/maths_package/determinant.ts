@@ -1,9 +1,9 @@
 
-export function determinantTwoByTwo(val:number,val1:number,val2:number,val3:number):number|Error | any{
+export function determinantTwoOnTwo(val:number,val1:number,val2:number,val3:number):number|Error | any{
     if(!val || !val1 || !val2 || !val3) return new Error("Invalid Input")
     return (val * val3) - (val1 * val2)
 }
-export function determinantThreeByThree(
+export function determinantThreeOnThree(
     a11:number, a12:number, a13:number, 
     a21:number,a22:number,a23:number,
     a31:number,a32:number, a33:number

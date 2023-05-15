@@ -1,6 +1,6 @@
 import HCF from "./HCF";
 
-function LCM(num:number, num1:number,num2?:number | any):number | Error |undefined {
+function LCM(num:number, num1:number,num2?:number | any):number | Error | undefined {
     if(!num || !num1) return new Error("Invalid Inputs")
     let rem: number = num / HCF(num, num1, num2);
     let rem1: number = num1 / HCF(num, num1, num2);

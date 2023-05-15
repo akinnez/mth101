@@ -15,7 +15,11 @@ MTH101 is an extensive mathematical library that makes it easier to perform easy
 ## Installation and Usage
   - Package Manager:
   
-    $ npm install mth101
+     npm install mth101;
+      
+      or
+
+      yarn add mth101
   
   Once installed, you can import the library using import or require approach:
 
@@ -29,10 +33,13 @@ MTH101 is an extensive mathematical library that makes it easier to perform easy
   
   if you use require for importing: 
 
-    const mth101 = require("mth101");
+     const mth101 = require("mth101");
 
      console.log(mth101.HCF(12,15,20));
 
-     
+
+ - CDN  
+        <script src="https://cdn.jsdelivr.net/npm/mth101@0.0.11/lib/index.min.js"></script>
+    
 
 
