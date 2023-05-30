@@ -4,7 +4,7 @@
     "type": "git",
     "url": "https://github.com/akinnez/mth101.git"
   },
-  "version": "0.0.11",
+  "version": "0.0.11.1",
   "description": "An extensive mathematical library that makes it easier to perform easy and complex mathematical concepts",
   "main": "lib/index.js",
   "types":"lib/index.d.ts",

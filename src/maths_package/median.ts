@@ -1,4 +1,4 @@
-import sort from "./sort"
+import sort from "../utils/sort"
 
 function getMedian(arr:Array<number>):number | Error | any{
     if(!arr) return new Error("Invalid Input")
