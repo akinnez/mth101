@@ -4,7 +4,7 @@ import commonfactor from "./maths_package/commonFactor";
 import { determinantThreeOnThree, determinantTwoOnTwo } from "./maths_package/determinant";
 import { simuThreeVariable, simuTwoVariable } from "./maths_package/equation";
 import factoria from "./maths_package/factorial";
-import flour from "./maths_package/floor";
+import ranges from "./maths_package/range"
 import { val1 } from "./utils/getValue";
 import HCFs from "./maths_package/HCF";
 import LCMs from "./maths_package/LCM";
@@ -12,11 +12,8 @@ import getMin from "./maths_package/mean";
 import getMediian from "./maths_package/median";
 import getMod from "./maths_package/mode";
 import permutations from "./maths_package/permutation";
-import ranges from "./maths_package/range";
-import sorts from "./maths_package/sort";
 import standardDeviations from "./maths_package/standardDeviation";
 import varyance from "./maths_package/variance";
-import addd from "./maths_package/add";
 import abss from "./maths_package/abs";
 import { toDecimalPlaces, deg2Rad, toSignificantFigures,sinInDeg, cosInDeg,tanInDeg,cosecInDeg, secInDeg,cotInDeg,rad2Deg,arccos,arcsin,arctan } from "./utils/conversion";
 
@@ -26,12 +23,7 @@ import { toDecimalPlaces, deg2Rad, toSignificantFigures,sinInDeg, cosInDeg,tanIn
  export function abs(val: number | number[]):number | number[] | Error{
       return abss(val)
 }
-/**
-* Returns the addition of number(s)
-*/
-export function add(...val:Array<number>):number| Error{
- return addd(val)
-}
+
 export function combination(val:number, val1:number):number | Error{
   return comb(val,val1)
 }
@@ -59,9 +51,7 @@ export function factorial(val:number):number{
 export function factors(val:number):Array<number>{
  return val1(val)
 }
-export function floor(val:number):number | Error | any{
- return flour(val)
-}
+
 export function getMean(...arr:Array<number>):number | undefined{
   return getMin(arr)
 }
@@ -88,12 +78,6 @@ export function significantFigure(num:number,sf:number):number | Error | undefin
 }
 export function decimalPlaces(num:number,dp:number):number | Error | any {
   return toDecimalPlaces(num,dp)
-}
-/**
-* Returns the sorted numbers from an array of numbers
-*/
-export function sort(arr:Array<number>):Array<number>{
-  return sorts(arr)
 }
 /**
 * Returns the standard variation of an array of numbers

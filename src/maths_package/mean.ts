@@ -1,4 +1,4 @@
-import add from "./add"
+import add from "../utils/add"
 
 function getMean(arr:Array<number>):number | Error | any{
     if(!arr) return new Error("Invalid Input")
